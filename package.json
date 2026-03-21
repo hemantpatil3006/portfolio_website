@@ -2,7 +2,7 @@
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
     "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "serve": "live-server src",
+    "serve": "live-server src --ignore=output.css",
     "start": "concurrently \"npm run watch\" \"npm run serve\""
   },
   "dependencies": {
